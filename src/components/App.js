@@ -33,15 +33,16 @@ class App extends Component {
         return (
             <div className='ui container'>
             <SearchBar onSearch={this.onSearch}/>
-            <div className='ui grid'>
-            <div className='ui row'>
-            <div className='eleven wide column'>
+            <div className='ui grid container'>
+            <div className='ui stackable row '>
+            <div className='eleven wide computer column'>
             <VideoDetail video = {this.state.selectedVideo}/>
             </div>
-            <div className='five wide column'>
+            <div className='five wide computer column'>
             <VideoList onVideoSelect = {this.onVideoSelect} videolist = {this.state.videos}/>
             </div>
             </div>
+            
             </div>
             </div>
         )
